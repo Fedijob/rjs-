@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 50px;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.navbe {
+  display: flex !important;
+  justify-content: space-evenly !important;
+  width: 100%;
+}
+
+/* .nav > nav {
+  margin: 20px;
+  width: 100%;
+} */
+.logo {
+  display: flex;
+  justify-content: center !important;
+}
+.games {
+  padding-bottom: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.games > * {
+  margin-top: 40px;
+}
+
+.gamebod {
+  background-color: #575555;
+  color: aliceblue;
+}
+.script {
+  color: white;
+}
+.title-container {
+  font-family: "Ubuntu", sans-serif;
+}
+.Footer {
+  position: absolute;
+  /* margin-top: 1446px; */
+  width: 100%;
+  height: 60px; /* Height of the footer */
+  background: #6cf;
+  /* margin-left: -153px; */
+  background-color: #212529 !important ;
+}
