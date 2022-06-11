@@ -1,0 +1,166 @@
+/*--- slider-css --*/
+.banner1 {
+  background: url(C:\Users\Lenovo\Desktop\rjs\public\images\bnr1.jpg)
+    no-repeat 0px 0px;
+  background-size: cover;
+  min-height: 680px;
+}
+.banner2 {
+  background: url(C:\Users\Lenovo\Desktop\rjs\public\images\bnr2.jpg)
+    no-repeat 0px 0px;
+  background-size: cover;
+  min-height: 680px;
+}
+.banner3 {
+  background: url(C:\Users\Lenovo\Desktop\rjs\public\images\bnr3.jpg)
+    no-repeat 0px 0px;
+  background-size: cover;
+  min-height: 680px;
+}
+.slider {
+  position: relative;
+}
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.rslides div.slid {
+  -webkit-backface-visibility: hidden;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+.caption {
+  width: 100%;
+  margin-top: 16em;
+}
+.banner-info {
+  position: absolute;
+  z-index: 99;
+  top: 100px;
+  left: 0;
+  right: 0;
+}
+.caption {
+  text-align: center;
+}
+.caption h3 {
+  color: #ffffff;
+  font-size: 2.8em;
+  font-family: "Play-Bold";
+}
+.caption p {
+  line-height: 1.8em;
+  font-size: 1em;
+  font-weight: 400;
+  color: #ffffff;
+  width: 60%;
+  margin: 1em auto 0 auto;
+}
+.callbacks_tabs a:after {
+  content: "\f111";
+  font-size: 0;
+  font-family: FontAwesome;
+  visibility: visible;
+  display: block;
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  background: #69d2e8;
+  border: 2px solid#fff;
+}
+.callbacks_here a:after {
+  background: #d52f47;
+}
+.callbacks_tabs a {
+  visibility: hidden;
+}
+.callbacks_tabs li {
+  display: inline-block;
+}
+ul.callbacks_tabs.callbacks1_tabs {
+  position: absolute;
+  bottom: 50px;
+  z-index: 999;
+  left: 46%;
+}
+/*---flexi-slider---*/
+#flexiselDemo1,
+#flexiselDemo2,
+#flexiselDemo3 {
+  display: none;
+}
+.nbs-flexisel-container {
+  position: relative;
+  max-width: 100%;
+}
+.nbs-flexisel-ul {
+  position: relative;
+  width: 9999px;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-align: center;
+}
+.nbs-flexisel-inner {
+  overflow: hidden;
+}
+.nbs-flexisel-item {
+  float: left;
+  margin: 0px;
+  padding: 0px 21px;
+  cursor: pointer;
+  position: relative;
+  line-height: 0px;
+  width: 285px !important;
+}
+.nbs-flexisel-item > img {
+  cursor: auto;
+  position: relative;
+  width: 90%;
+  margin: 0 5%;
+}
+.content {
+  padding: 4em 0;
+}
+.top-games h3,
+.latest-games h3 {
+  color: #f43c60;
+  font-size: 2.4em;
+  font-family: "Play-Bold";
+  text-align: center;
+}
+.game-grid {
+  text-align: center;
+}
+.top-game-grids {
+  margin-top: 4em;
+}
+.game-grid h4 {
+  font-family: "Play-Bold";
+  font-size: 1.3em;
+}
+.game-grid p {
+  color: #777;
+  font-size: 0.9em;
+  margin: 0.7em 0;
+  line-height: 1.8em;
+}
+.game-grid img {
+}

@@ -5,7 +5,7 @@ import Game from "./Game";
 
 function GameList({ text }) {
   const games = useSelector((state) => state.game.games);
-  console.log(games);
+
   return (
     <div style={{ marginTop: "20px" }}>
       <AddGame />

@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Button, Form, Modal } from "react-bootstrap";
 import { useDispatch } from "react-redux";
-import { addgame } from "../redux/GameSlice";
+import { editgame } from "../redux/GameSlice";
 
-const AddGame = () => {
+function EditGame({ game }) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const [newgame, setnewgame] = useState({
+  const [gameEdited, setgameEdited] = useState({
     name: "",
     posterUrl: "",
     description: "",
@@ -24,21 +24,21 @@ const AddGame = () => {
           onClick={handleShow}
           style={{ backgroundColor: "#676e76", borderColor: "#676e76" }}
         >
-          +
+          edit
         </Button>
 
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>Add Game</Modal.Title>
+            <Modal.Title>Edit Game</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <Form.Group className="mb-3" controlId="formGroupEmail">
               <Form.Label>Game Name</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter game"
+                placeholder={game.name}
                 onChange={(e) =>
-                  setnewgame({ ...newgame, name: e.target.value })
+                  setgameEdited({ ...gameEdited, name: e.target.value })
                 }
               />
             </Form.Group>
@@ -47,9 +47,9 @@ const AddGame = () => {
               <Form.Label>Game posterUrl</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter game image"
+                placeholder={game.posterUrl}
                 onChange={(e) =>
-                  setnewgame({ ...newgame, posterUrl: e.target.value })
+                  setgameEdited({ ...gameEdited, posterUrl: e.target.value })
                 }
               />
             </Form.Group>
@@ -57,9 +57,9 @@ const AddGame = () => {
               <Form.Label>Game Description</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter game description"
+                placeholder={game.description}
                 onChange={(e) =>
-                  setnewgame({ ...newgame, description: e.target.value })
+                  setgameEdited({ ...gameEdited, description: e.target.value })
                 }
               />
             </Form.Group>
@@ -70,15 +70,17 @@ const AddGame = () => {
             </Button>
             <Button
               variant="primary"
-              onClick={() => dispatch(addgame(newgame))}
+              onClick={() =>
+                dispatch(editgame({ name: game.name, gameEdited }))
+              }
             >
-              Add
+              Edit
             </Button>
           </Modal.Footer>
         </Modal>
       </>
     </div>
   );
-};
+}
 
-export default AddGame;
+export default EditGame;

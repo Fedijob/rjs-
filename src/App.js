@@ -10,6 +10,7 @@ import { Route, Routes } from "react-router-dom";
 import GameList from "./components/GameList";
 
 import About from "./components/About";
+import NewHome from "./components/NewHome";
 
 function App() {
   const [text, setText] = useState("");
@@ -19,7 +20,8 @@ function App() {
       <Navb setText={setText} />
 
       <Routes>
-        <Route path="/" element={<GameList text={text} />} />
+        <Route path="/" element={<NewHome />} />
+        <Route path="/games" element={<GameList text={text} />} />
         <Route path="/upcoming" element={<Upcoming text={text} />} />
         <Route path="/about" element={<About />} />
       </Routes>

@@ -76,3 +76,18 @@
   /* margin-left: -153px; */
   background-color: #212529 !important ;
 }
+.Bigdiv {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 400px;
+  margin-top: 50px;
+}
+.div-right {
+  width: 70%;
+}
+.div-left {
+  width: 30%;
+  color: white;
+  margin: 20px;
+}

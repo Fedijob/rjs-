@@ -20,6 +20,14 @@ const Navb = ({ setText }) => {
             </Nav.Link>
             <Nav.Link>
               <Link
+                to="/games"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                Games
+              </Link>
+              </Nav.Link>
+              <Nav.Link>
+              <Link
                 to="/upcoming"
                 style={{ textDecoration: "none", color: "white" }}
               >
